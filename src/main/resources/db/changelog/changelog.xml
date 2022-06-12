@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.11.xsd">
+    <!-- Changes to include -->
+    <include file="/db/changelog/createCategory.sql"/>
+    <include file="/db/changelog/createPancake.sql"/>
+    <include file="/db/changelog/createIngredient.sql"/>
+    <include file="/db/changelog/createPancakeIngredient.sql"/>
+    <include file="/db/changelog/createOrder.sql"/>
+    <include file="/db/changelog/addOrderColumnToPancake.sql"/>
+    <include file="/db/changelog/addForeignKeyToPancake.sql"/>
+
+
+
+</databaseChangeLog>

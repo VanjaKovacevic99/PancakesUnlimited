@@ -1,0 +1,1 @@
+CREATE TABLE pancake_ingredient (pancake_id INT , ingredient_id INT , PRIMARY KEY(pancake_id,ingredient_id),  FOREIGN KEY (pancake_id) REFERENCES pancake(id),  FOREIGN KEY (ingredient_id) REFERENCES ingredient(id));
