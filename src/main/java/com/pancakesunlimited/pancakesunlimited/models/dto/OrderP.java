@@ -2,13 +2,12 @@ package com.pancakesunlimited.pancakesunlimited.models.dto;
 
 import lombok.Data;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.OneToMany;
+
+import java.io.Serializable;
 import java.util.List;
 
 @Data
-public class OrderP {
+public class OrderP implements Serializable {
 
     private Integer id;
     private String description;

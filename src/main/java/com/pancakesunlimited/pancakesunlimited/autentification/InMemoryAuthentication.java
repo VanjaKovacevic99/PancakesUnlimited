@@ -15,6 +15,7 @@ public class InMemoryAuthentication extends WebSecurityConfigurerAdapter {
     // Adding the roles
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+
         auth.inMemoryAuthentication()
                 .withUser("customer")
                 .password("osd")
