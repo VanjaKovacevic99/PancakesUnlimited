@@ -12,6 +12,7 @@
     <include file="/db/changelog/createOrder.sql"/>
     <include file="/db/changelog/addOrderColumnToPancake.sql"/>
     <include file="/db/changelog/addForeignKeyToPancake.sql"/>
+    <include file="/db/changelog/addColumToIngredient.sql"/>
 
 
 

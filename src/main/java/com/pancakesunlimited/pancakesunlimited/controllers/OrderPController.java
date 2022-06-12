@@ -3,6 +3,7 @@ package com.pancakesunlimited.pancakesunlimited.controllers;
 import com.pancakesunlimited.pancakesunlimited.exceptions.NotFoundException;
 import com.pancakesunlimited.pancakesunlimited.models.dto.Ingredient;
 import com.pancakesunlimited.pancakesunlimited.models.dto.OrderP;
+import com.pancakesunlimited.pancakesunlimited.models.entities.OrderPEntity;
 import com.pancakesunlimited.pancakesunlimited.models.requests.IngredientRequest;
 import com.pancakesunlimited.pancakesunlimited.models.requests.OrderPRequest;
 import com.pancakesunlimited.pancakesunlimited.services.OrderPService;
@@ -30,9 +31,9 @@ public class OrderPController {
          orderPService.insert(orderPRequest);
     }
 
-    @GetMapping
-    public List<OrderP> findAll(){
-        return orderPService.findAll();
+    @GetMapping("/{id}")
+    OrderP getOrderById(@PathVariable Integer id) throws NotFoundException {
+        return orderPService.findById(id);
     }
 
 }

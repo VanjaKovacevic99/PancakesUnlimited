@@ -1,21 +1,19 @@
 package com.pancakesunlimited.pancakesunlimited.services.impl;
 
 import com.pancakesunlimited.pancakesunlimited.exceptions.NotFoundException;
-import com.pancakesunlimited.pancakesunlimited.models.dto.Ingredient;
 import com.pancakesunlimited.pancakesunlimited.models.dto.OrderP;
 import com.pancakesunlimited.pancakesunlimited.models.entities.OrderPEntity;
 import com.pancakesunlimited.pancakesunlimited.models.requests.OrderPRequest;
-import com.pancakesunlimited.pancakesunlimited.models.requests.PancakeAndPancakeIngredientRequest;
+
 import com.pancakesunlimited.pancakesunlimited.repositories.OrderPEntityRepository;
 import com.pancakesunlimited.pancakesunlimited.services.OrderPService;
 import com.pancakesunlimited.pancakesunlimited.services.PancakeAndPancakeIngredientService;
 import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.util.List;
-import java.util.stream.Collectors;
+
 
 @Service
 @Transactional
